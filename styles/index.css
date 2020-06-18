@@ -29,10 +29,22 @@ form {
     text-align: center;
 }
 
-form input {
+form input  {
     margin-top: 15px;
     width: 20px;
     height: 20px;
     border: none;
-    color: whit;
+}
+
+#btntry {
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: background 400ms;
+}
+
+#btntry:hover {
+    background-color: #2b2b2b;
 }
