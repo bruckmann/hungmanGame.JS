@@ -29,11 +29,18 @@ form {
     text-align: center;
 }
 
-form input  {
+    #teclado  {
     margin-top: 15px;
     width: 20px;
     height: 20px;
     border: none;
+}
+
+#dica{
+    width: 60px;
+    height: 30px;
+    background-color: green;
+    color: white;
 }
 
 #btntry {
@@ -43,6 +50,7 @@ form input  {
     background-color: black;
     color: white;
     transition: background 400ms;
+    margin-top: 10px;
 }
 
 #btntry:hover {
