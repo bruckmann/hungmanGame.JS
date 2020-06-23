@@ -20,7 +20,11 @@ function SoreteiaPalavra(array) {
 console.log(SoreteiaPalavra(palavras))
 
 
+function Dashes() {
 
+    
+
+}
 
 
 

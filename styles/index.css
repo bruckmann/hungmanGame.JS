@@ -7,6 +7,7 @@ body {
     background-color: #404040;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 50px;
 }
 
 
@@ -18,12 +19,12 @@ header nav {
 .hungman {
     margin-top: 50px;
     text-align: center;
-   
+
 }
 
 .hungman img {
     width: 350px;
- 
+
 }
 
 form {
@@ -64,9 +65,7 @@ form {
     height: 230px;
     bottom: 240px;
     left: 51.5%;
-  
-    
-   
+
 }
 #corpo{
     position: absolute;
@@ -96,7 +95,6 @@ form {
     height: 250px;
     bottom: 18px;
     left: 49.2%;
-   
 }
 #perna2{
     position: absolute;
@@ -104,10 +102,22 @@ form {
     height: 250px;
     bottom: 21px;
     left: 52.5%;
-   
+
 }
 
 #forca{
     position: absolute;
 
+}
+
+.word {
+    text-align: center;
+}
+
+.word p {
+    margin-bottom: 0px;
+}
+
+.word h2 {
+    margin-top: 2px;
 }
