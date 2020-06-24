@@ -1,3 +1,4 @@
+let dashes = document.getElementById('dashes');
 const palavras = [
     'Florianópolis',
     'Curitiba',
@@ -17,10 +18,22 @@ function SoreteiaPalavra(array) {
     return array[numeroSort]
 }
 
-console.log(SoreteiaPalavra(palavras))
 
+const SortedWord = SoreteiaPalavra(palavras)
+window.onload = Dashes()
 
+function Dashes() {
+    const letters = SortedWord.lenght
+    for (i=0;i<letters;i++) {
+    let letter = SortedWord.charAt(i)
 
+        if (letter != " ") {
+            dashes.innerHTML += "-"
+        } else {
+            dashes.innerHTML += " "
+        }
+    }
+}
 
 
 
