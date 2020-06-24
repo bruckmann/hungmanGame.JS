@@ -123,3 +123,17 @@ form {
 .word h2 {
     margin-top: 2px;
 }
+
+
+.letras {
+    text-align: center;
+}
+
+.letras p {
+    margin-bottom:0px;
+}
+
+.letras h2 {
+    margin-top: 2px;
+}
+
