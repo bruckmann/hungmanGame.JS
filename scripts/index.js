@@ -1,3 +1,4 @@
+const btnTry = document.getElementById('btntry');
 let dashes = document.getElementById('dashes');
 const palavras = [
     'Florianópolis',
@@ -12,29 +13,36 @@ const palavras = [
     'Goias'
 ]
 
+btnTry.addEventListener('click', dashed)
 
-function SoreteiaPalavra(array) {
+
+
+function SorteiaPalavra(array) {
     const numeroSort = Math.floor(Math.random() * 10)
     return array[numeroSort]
 }
 
 
-const SortedWord = SoreteiaPalavra(palavras)
-window.onload = Dashes()
+const SortedWord = SorteiaPalavra(palavras)
 
-function Dashes() {
-    const letters = SortedWord.lenght
-    for (i=0;i<letters;i++) {
-    let letter = SortedWord.charAt(i)
+const letters = SortedWord.length
+
+
+
+
+function dashed ()  {
+
+    for (i=0;i<=letters;i++) {
+
+        const letter = SortedWord.charAt(i) 
 
         if (letter != " ") {
-            dashes.innerHTML += "-"
+
+            dashes.textContent += "-"
+
         } else {
             dashes.innerHTML += " "
         }
+
     }
 }
-
-
-
-
