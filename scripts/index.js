@@ -1,8 +1,6 @@
 const btnTry = document.getElementById('btntry');
 let dashes = document.getElementById('dashes');
 let letraa = document.getElementById('letraa')
-const letraA = document.getElementById('a')
-
 const palavras = [
     'Florianópolis',
     'Curitiba',
@@ -52,7 +50,7 @@ function dashed ()  {
 
 
 function palavras(){
-    
+    const letraA = document.getElementById('a')
     const palavra = SortedWord.charAt(i)
     
     for (i=0 ; i <= letters; i++){
