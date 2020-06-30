@@ -2,16 +2,16 @@ const btnTry = document.getElementById('btntry');
 let dashes = document.getElementById('dashes');
 let letraa = document.getElementById('letraa')
 const palavras = [
-    'Florianópolis',
-    'Curitiba',
-    'São paulo',
-    'Porto Alegre',
-    'Brasilia',
-    'Rio de Janeiro',
-    'Manaus',
-    'Recife',
-    'Belo Horizonte',
-    'Goias'
+    'FLORIANOPOLIS',
+    'CURITIBA',
+    'SAO PAULO',
+    'PORTO ALEGRE',
+    'BRASILIA',
+    'RIO DE JANEIRO',
+    'MANAUS',
+    'RECIFE',
+    'BELO HORIZONTE',
+    'goias'
 ]
 
 btnTry.addEventListener('click', dashed)
@@ -42,9 +42,8 @@ function dashed ()  {
             dashes.textContent += "-"
 
         } else {
-            dashes.innerHTML += " "
+            dashes.textContent += " "
         }
-
     }
 }
 
@@ -53,9 +52,15 @@ function palavras(){
     const letraA = document.getElementById('a')
     const palavra = SortedWord.charAt(i)
     
+    const Letter = SortedWord.charAt(i)
+
+    Letter 
+
     for (i=0 ; i <= letters; i++){
-    if (palavra == letraA.value){
-        letraa.innerHTML += "A"
-    }
+        if (Letter == Aletter.value) {
+
+            textWords.textContent += "A"
+        
+        }
     }
 }
