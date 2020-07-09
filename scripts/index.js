@@ -52,12 +52,12 @@ function dashed ()  {
 
 
 function putLetter () {
-    
-    const Letter = SortedWord.charAt(i)
 
-    Letter 
 
     for (i=0 ; i <= letters; i++){
+
+        const Letter = SortedWord.charAt(i)
+        
         if (Letter == Aletter.value) {
 
             textWords.textContent += "A"
