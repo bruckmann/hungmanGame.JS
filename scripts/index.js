@@ -1,9 +1,10 @@
 const btnTry = document.getElementById('btntry');
 let dashes = document.getElementById('dashes');
-let textWords = document.getElementById('textword');
+let textWords = document.getElementById('textWord');
 const Aletter = document.getElementById('a');
 
 Aletter.addEventListener('click' , putLetter)
+
 const palavras = [
     'FLORIANOPOLIS',
     'CURITIBA',
@@ -14,11 +15,10 @@ const palavras = [
     'MANAUS',
     'RECIFE',
     'BELO HORIZONTE',
-    'GOIAS'
+    'goias'
 ]
 
 btnTry.addEventListener('click', dashed)
-
 
 
 function SorteiaPalavra(array) {
@@ -47,21 +47,21 @@ function dashed ()  {
         } else {
             dashes.textContent += " "
         }
-
     }
 }
 
 
-function  putLetter (){
-   
+function putLetter () {
+    
+    const Letter = SortedWord.charAt(i)
 
+    Letter 
 
     for (i=0 ; i <= letters; i++){
-        const Letter = SortedWord.charAt(i)
-   
         if (Letter == Aletter.value) {
 
             textWords.textContent += "A"
-    }
+        
+        }
     }
 }
