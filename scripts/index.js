@@ -1,6 +1,6 @@
 const btnTry = document.getElementById('btntry');
 let dashes = document.getElementById('dashes');
-let textWords = document.getElementById('textWord');
+let textWords = document.getElementById('textword');
 const Aletter = document.getElementById('a');
 
 Aletter.addEventListener('click' , putLetter)
@@ -14,7 +14,7 @@ const palavras = [
     'MANAUS',
     'RECIFE',
     'BELO HORIZONTE',
-    'goias'
+    'GOIAS'
 ]
 
 btnTry.addEventListener('click', dashed)
