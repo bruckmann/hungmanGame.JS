@@ -28,10 +28,6 @@ header nav {
  
 }
 
-form {
-    margin-top: 35px;
-    text-align: center;
-}
 
     #teclado  {
     margin-top: 15px;
@@ -112,28 +108,33 @@ form {
 
 }
 
-.word {
-    text-align: center;
+#btnstart{
+    display: flex;
+    width: 60px;
+    margin: auto;
 }
 
-.word p {
-    margin-bottom: 0px;
+#btns{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
 }
 
-.word h2 {
-    margin-top: 2px;
+#btnbtn{
+    display: flex;
+    margin: auto;
+    width: 100px;
 }
 
-
-.letras {
-    text-align: center;
+#resultados{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 20px;
+    margin-bottom: 20px;
 }
 
-.letras p {
-    margin-bottom:0px;
+.letterb{
+    padding: 5px;
 }
-
-.letras h2 {
-    margin-top: 2px;
-}
-
