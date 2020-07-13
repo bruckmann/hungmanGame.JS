@@ -12,14 +12,24 @@ const words = [
       "tip": "País"
     },
   ]; 
+  let buttonRestart = document.getElementById("restart");
+  let tip = document.getElementById("tip");
+
+  buttonRestart.style.display = "none";
+  tip.style.display = "none";
+
   
   function startGame() {
     let drawnNumber; 
     let drawnWord; 
+
     let correctLetters = 0;
     let wrongLetters = 0;
     let hit = false;
+
     let tip = document.getElementById("tip");
+    let buttonStart = document.getElementById("start");
+    let buttonRestart = document.getElementById("restart");
 
     let cabeca = document.getElementById("man0");
     let corpo = document.getElementById("man1");
@@ -34,11 +44,14 @@ const words = [
     braco2.style.display = "none";
     perna1.style.display = "none";
     perna2.style.display = "none";
+
+    buttonStart.style.display = "none";
+    buttonRestart.style.display = "inline"
+    tip.style.display = "inline";
    
     drawnNumber = Math.floor(Math.random() * (3 - 0)) + 0;
     drawnWord = words[drawnNumber].name;
-  
-    console.log(drawnNumber)
+
     returnTraces(drawnWord);
   
     function returnTraces(word) {
@@ -91,14 +104,23 @@ const words = [
       };
     
       if(wrongLetters == 6){
-        console.log("Game over")
+        setTimeout(() => { 
+           window.alert("Game over \n a palavra era: " + drawnWord); 
+           location.reload();
+          }, 200);
       };
 
       if(correctLetters == wordLength) {
-        console.log("Parabéns você ganhou")
+        setTimeout(() => {  
+          window.alert("Parabéns você ganhou");
+          location.reload();
+        }, 200);
       };
-
     };
+
+    function restartGame() {
+      location.reload();
+    }
  
     let buttons = document.querySelectorAll("button[name=letter]");
     
@@ -107,8 +129,10 @@ const words = [
     };
     
     tip.addEventListener("click", () => {
-      console.log(words[drawnNumber].tip)
+      window.alert(words[drawnNumber].tip)
     });
+
+    buttonRestart.addEventListener("click", restartGame);
   };
   
   
