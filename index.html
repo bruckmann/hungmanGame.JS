@@ -10,68 +10,61 @@
 <body>
     <header>
         <nav>
-            <h1>Hungman</h1>
+             <h1>Hungman</h1>
         </nav>
     </header>
-<main>
-    <div class="hungman">
-        <img src="assets/corpo boneco/forca.png" alt="forca" id="forca">
-        <img src="assets/corpo boneco/cabeça.png" alt="cabeça" id="cabeca">
-        <img src="assets/corpo boneco/corpo.png" alt="corpo" id="corpo">
-        <img src="assets/corpo boneco/braço1.png" alt="braço1" id="braco1">
-        <img src="assets/corpo boneco/braço2.png" alt="braço2" id="braco2">
-        <img src="assets/corpo boneco/perna1.png" alt="perna1" id="perna1">
-        <img src="assets/corpo boneco/perna2.png" alt="perna2" id="perna2">
-
-   
-
-
-
-<div class="butt">
-
-<div id="resultados">
-    <h2><pre id=word  style="display:flex ;"></pre></h2>
-    <h2><pre id=result></pre></h2>
-</div>
-
-
-  <div id="btns">
-    <button name="letter" class="letterb" value="A">A</button>
-    <button name="letter" class="letterb" value="B">B</button>
-    <button name="letter" class="letterb" value="C">C</button>
-    <button name="letter" class="letterb" value="D">D</button>
-    <button name="letter" class="letterb" value="E">E</button>
-    <button name="letter" class="letterb" value="F">F</button>
-    <button name="letter" class="letterb" value="G">G</button>
-    <button name="letter" class="letterb" value="H">H</button>
-    <button name="letter" class="letterb" value="I">I</button>
-    <button name="letter" class="letterb" value="J">J</button>
-    <button name="letter" class="letterb" value="K">K</button>
-    <button name="letter" class="letterb" value="L">L</button>
-    <button name="letter" class="letterb" value="M">M</button>
-    <button name="letter" class="letterb" value="N">N</button>
-    <button name="letter" class="letterb" value="O">O</button>
-    <button name="letter" class="letterb" value="P">P</button>
-    <button name="letter" class="letterb" value="Q">Q</button>
-    <button name="letter" class="letterb" value="R">R</button>
-    <button name="letter" class="letterb" value="S">S</button>
-    <button name="letter" class="letterb" value="T">T</button>
-    <button name="letter" class="letterb" value="U">U</button>
-    <button name="letter" class="letterb" value="V">V</button>
-    <button name="letter" class="letterb" value="W">W</button>
-    <button name="letter" class="letterb" value="X">X</button>
-    <button name="letter" class="letterb" value="Y">Y</button>
-    <button name="letter" class="letterb" value="Z">Z</button>
-</div> 
-
-            <br>
-           
-            <p> <input type="button" id="start" name="verificar" value="Começar" onclick="startGame()"> </p>
-     
-  
-    </div>
-</div>
-</main>
+    <main>
+        <div class="content">
+            <div class="hungman">
+                <img src="assets/corpo boneco/forca.png" alt="forca" id="forca">
+                <img src="assets/corpo boneco/cabeça.png" name="man" alt="cabeça" id="man0">
+                <img src="assets/corpo boneco/corpo.png" name="man" alt="corpo" id="man1">
+                <img src="assets/corpo boneco/braço1.png" name="man" alt="braço1" id="man2">
+                <img src="assets/corpo boneco/braço2.png" name="man" alt="braço2" id="man3">
+                <img src="assets/corpo boneco/perna1.png" name="man" alt="perna1" id="man4">
+                <img src="assets/corpo boneco/perna2.png" name="man" alt="perna2" id="man5">
+            </div>
+        
+            <div id="resultados">
+                <h2><pre id=word  style="display:flex ;"></pre></h2>
+                <h2><pre id=result></pre></h2>
+            </div>
+        
+            <div class="butt">
+                <div id="btns">
+                    <button name="letter" class="letterb" value="A">A</button>
+                    <button name="letter" class="letterb" value="B">B</button>
+                    <button name="letter" class="letterb" value="C">C</button>
+                    <button name="letter" class="letterb" value="D">D</button>
+                    <button name="letter" class="letterb" value="E">E</button>
+                    <button name="letter" class="letterb" value="F">F</button>
+                    <button name="letter" class="letterb" value="G">G</button>
+                    <button name="letter" class="letterb" value="H">H</button>
+                    <button name="letter" class="letterb" value="I">I</button>
+                    <button name="letter" class="letterb" value="J">J</button>
+                    <button name="letter" class="letterb" value="K">K</button>
+                    <button name="letter" class="letterb" value="L">L</button>
+                    <button name="letter" class="letterb" value="M">M</button>
+                    <button name="letter" class="letterb" value="N">N</button>
+                    <button name="letter" class="letterb" value="O">O</button>
+                    <button name="letter" class="letterb" value="P">P</button>
+                    <button name="letter" class="letterb" value="Q">Q</button>
+                    <button name="letter" class="letterb" value="R">R</button>
+                    <button name="letter" class="letterb" value="S">S</button>
+                    <button name="letter" class="letterb" value="T">T</button>
+                    <button name="letter" class="letterb" value="U">U</button>
+                    <button name="letter" class="letterb" value="V">V</button>
+                    <button name="letter" class="letterb" value="W">W</button>
+                    <button name="letter" class="letterb" value="X">X</button>
+                    <button name="letter" class="letterb" value="Y">Y</button>
+                    <button name="letter" class="letterb" value="Z">Z</button>
+                </div> 
+            
+                <br>
+                <p><input type="button" id="start" name="verificar" value="Começar" onclick="startGame()"></p>
+                <p><button id="tip">Dica</button></p>
+        </div> 
+    </main>
     <script src="scripts/index.js"></script>
 </body>
 </html>

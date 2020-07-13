@@ -7,20 +7,18 @@ body {
     background-color: #404040;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
-    
 }
-
 
 header nav {
     margin-top: 25px;
     text-align: center;
 }
+
 main{
     text-align: center;
-    margin-bottom: 30px
-    
-    
+    margin-bottom: 30px    
 }
+
 .hungman {
     display: flex;
     margin: auto;
@@ -28,113 +26,97 @@ main{
     width: 20%;
     height: 90%;
 
-    
-
+    border: 2px solid white;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
 
+    align-items: center;
+    justify-content: center;
+}
 
+#forca {
+    display: flex;
+    margin: auto;
+    width: 90%;
+  }
 
-#cabeca{
-   
+#man0 {   
     position: absolute;
     width: 28%;
     height: 30%;
     right: 12%;
     top: 20%;
-
 }
-#corpo{
-    
-   
+
+#man1 {
     position: absolute;
     width: 40%;
     height: 50%;
     right: 6.5%;
     top: 27%;
-  
 }
 
-#braco1{
-  
+#man2 {
     position: absolute;
     width: 33%;
     height: 30%;
     right: 17%;
-    top: 28%;
-
-  
+    top: 28%;  
 }
-#braco2{
-   
+
+#man3 {
     position: absolute;
     width: 35%;
     height: 30%;
     right: -1%;
     top: 29.7%;
 }
-#perna1{
-   
+#man4 {
     position: absolute;
     width: 35%;
     height: 30%;
     right: 14%;
     top: 53%;
 }
-#perna2{
-    
+
+#man5 {
     position: absolute;
     width: 35%;
     height: 30%;
     right: 4.1%;
     top: 52.6%;
-   
 }
 
-#forca{
-  display: flex;
-  margin: auto;
-  width: 90%;
-  
- 
- 
-
+#resultados {
+    border: 2px solid white;
+    padding: 5px;
 }
 
-#start{
-    position: absolute;
-    left: 35%;
-    bottom: -45%;
-    width: 35%;
-    height: 15%;
+#result {
+    font-size: 40px;
+    margin-top: -20px;
+}
+#word {
+    font-size: 40px;
 }
 
-#btns{
+#btns {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr ;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 5px;
-    position: absolute;
-    left: 3%;
-    bottom: -25%;
-
+    border: 2px solid white;
 }
 
-
-
-#resultados{
-  position: absolute;
-  bottom: 4%;
-  left: 40%;
-}
-
-.letterb{
+.letterb {
     padding: 5px;
 }
 
-#result{
-    font-size: 26px;
+#start {
+    width: 35%;
+    height: 15%;
 }
-#word{
-    font-size: 26px;
-}
+
