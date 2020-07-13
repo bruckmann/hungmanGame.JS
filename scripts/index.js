@@ -11,6 +11,46 @@ const words = [
       "name": "Brasil",
       "tip": "País"
     },
+    {
+      "name": "Carteira",
+      "tip": "Objeto"
+    },
+    {
+      "name": "Cavalo",
+      "tip": "Animal"
+    },
+    {
+      "name": "Cachorro",
+      "tip": "Animal"
+    },
+    {
+      "name": "Mesa",
+      "tip": "Objeto"
+    },
+    {
+      "name": "Banana",
+      "tip": "Fruta"
+    },
+    {
+      "name": "Mercado",
+      "tip": "Lugar"
+    },
+    {
+      "name": "Filipe",
+      "tip": "Nome"
+    },
+    {
+      "name": "Parana",
+      "tip": "Estado"
+    },
+    {
+      "name": "Canada",
+      "tip": "País"
+    },
+    {
+      "name": "Cadeira",
+      "tip": "Móvel"
+    }
   ]; 
   let buttonRestart = document.getElementById("restart");
   let tip = document.getElementById("tip");
@@ -49,7 +89,7 @@ const words = [
     buttonRestart.style.display = "inline"
     tip.style.display = "inline";
    
-    drawnNumber = Math.floor(Math.random() * (3 - 0)) + 0;
+    drawnNumber = Math.floor(Math.random() * (13 - 0)) + 0;
     drawnWord = words[drawnNumber].name;
 
     returnTraces(drawnWord);
@@ -79,6 +119,8 @@ const words = [
       const wordLength = drawnWord.length; 
       let lettersMatched = 0;
 
+      event.target.style.visibility = "hidden";
+
       for (i = 0;i < wordLength;i++) {
         let letter = document.getElementById(`letter${i}`).textContent;
         let letterElement = document.getElementById(`letter${i}`);
@@ -87,7 +129,6 @@ const words = [
   
         if(value == letter){
           letterElement.style.visibility = "visible";
-          event.target.style.visibility = "hidden";
           hit = true;
           correctLetters++
           lettersMatched++
